@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for better contrast */
+    color: #333; /* Dark text color for readability */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #4CAF50; /* Main color for the navigation bar */
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold; /* Make links stand out */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    color: #ffeb3b; /* Change color on hover */
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px; /* Limit container width for better readability */
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    background-color: white; /* White background for the container */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Button Styles */
+.button {
+    background-color: #4CAF50; /* Button background color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for buttons */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column; /* Stack form fields vertically */
+    gap: 15px; /* Space between form fields */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border for input fields */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Larger font size for inputs */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4CAF50; /* Match navigation color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    nav {
+        padding: 10px; /* Smaller padding on mobile */
+    }
+
+    nav a {
+        margin: 0 10px; /* Adjust margin on mobile */
+    }
+
+    .container {
+        margin: 10px; /* Smaller margin on mobile */
+        padding: 15px; /* Smaller padding on mobile */
+    }
+
+    .button {
+        font-size: 14px; /* Smaller button font size on mobile */
+    }
+}
